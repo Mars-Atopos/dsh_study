@@ -1,0 +1,13 @@
+{
+  "typeCheckingMode": "standard",
+  "reportMissingTypeArgument": false,
+  "reportAny": false,
+  "reportExplicitAny": false,
+  "reportUnknownVariableType": false,
+  "reportUnknownMemberType": false,
+  "reportUnknownParameterType": false,
+  "reportUnknownArgumentType": false,
+  "reportUnannotatedClassAttribute": false,
+  "reportUnusedImport": false,
+  "reportUnusedCallResult": false
+}
