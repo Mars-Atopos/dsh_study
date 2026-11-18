@@ -2,10 +2,10 @@
 
 源码锚点（真源）：packages/core/session/src/types.ts + surface.ts
 
-这一讲要复刻的「真相」，与旧版 HTML 有三处关键不同，务必逐条对照：
+这一讲要复刻的「真相」：
 
-1. 事件不是 11 种，是 14 种核心事件。
-   旧版漏了 request/header、request/context、session/end-seed 三个。
+1.  14 种核心事件。
+   
 2. tool/call 的 arguments 是「未解析的原始 JSON 字符串」，不是 dict。
    dsh 刻意保留模型的原始输出，为的是回放时逐字节还原（types.ts 第 365-369 行）。
 3. 投影（derive_messages）只有 5 类 surface 事件产生消息：
@@ -26,7 +26,7 @@ import time
 from pathlib import Path
 from typing import Any
 
-# 14 种核心事件（SessionEventMap 的键），旧版说 11 种
+# 14 种核心事件（SessionEventMap 的键）
 SURFACE_EVENT_TYPES = {
     "user/message",
     "system/message",
